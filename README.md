@@ -1,16 +1,75 @@
-# Daily-Website-Visitors
-Time Series Regression using RNN - LSTM
+# 📊 Daily Website Visitors Forecasting
 
+Time Series Forecasting using Recurrent Neural Networks (RNN) – LSTM
 
+---
 
-About Dataset
-https://www.kaggle.com/datasets/bobnau/daily-website-visitors
+## 📌 Overview
 
-Context
-This file contains 5 years of daily time series data for several measures of traffic on a statistical forecasting teaching notes website whose alias is statforecasting.com. The variables have complex seasonality that is keyed to the day of the week and to the academic calendar. The patterns you you see here are similar in principle to what you would see in other daily data with day-of-week and time-of-year effects. Some good exercises are to develop a 1-day-ahead forecasting model, a 7-day ahead forecasting model, and an entire-next-week forecasting model (i.e., next 7 days) for unique visitors.
+This project focuses on forecasting daily website traffic using time series modeling techniques, specifically Long Short-Term Memory (LSTM) networks. The goal is to capture complex temporal patterns such as seasonality, trends, and user behavior over time.
 
-Content
-The variables are daily counts of page loads, unique visitors, first-time visitors, and returning visitors to an academic teaching notes website. There are 2167 rows of data spanning the date range from September 14, 2014, to August 19, 2020. A visit is defined as a stream of hits on one or more pages on the site on a given day by the same user, as identified by IP address. Multiple individuals with a shared IP address (e.g., in a computer lab) are considered as a single user, so real users may be undercounted to some extent. A visit is classified as "unique" if a hit from the same IP address has not come within the last 6 hours. Returning visitors are identified by cookies if those are accepted. All others are classified as first-time visitors, so the count of unique visitors is the sum of the counts of returning and first-time visitors by definition. The data was collected through a traffic monitoring service known as StatCounter.
+---
 
-Inspiration
-This file and a number of other sample datasets can also be found on the website of RegressIt, a free Excel add-in for linear and logistic regression which I originally developed for use in the course whose website generated the traffic data given here. If you use Excel to some extent as well as Python or R, you might want to try it out on this dataset.
+## 📂 Dataset
+
+Source: https://www.kaggle.com/datasets/bobnau/daily-website-visitors  
+
+The dataset contains 5 years of daily traffic data from a statistical forecasting website (statforecasting.com), including:
+
+- Page Loads  
+- Unique Visitors  
+- First-Time Visitors  
+- Returning Visitors  
+
+Total observations: **2,167 days**  
+Date range: **September 14, 2014 – August 19, 2020**
+
+---
+
+## 📊 Problem Statement
+
+The objective is to build models capable of predicting website traffic, including:
+
+- 1-day ahead forecasts  
+- 7-day ahead forecasts  
+- Weekly traffic predictions  
+
+This involves handling time series characteristics such as:
+- Day-of-week seasonality  
+- Academic calendar trends  
+- Temporal dependencies  
+
+---
+
+## 🧠 Approach
+
+- Data preprocessing and time series transformation  
+- Feature scaling and sequence generation  
+- Implementation of LSTM (RNN) model  
+- Model training and evaluation  
+- Forecasting future traffic patterns  
+
+---
+
+## 🔍 Key Insights
+
+- Website traffic exhibits strong weekly seasonality  
+- Patterns align with academic schedules and user behavior  
+- LSTM models effectively capture temporal dependencies in the data  
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Python  
+- TensorFlow / Keras  
+- Pandas, NumPy  
+- Matplotlib / Seaborn  
+
+---
+
+## 🚀 Future Improvements
+
+- Compare LSTM performance with ARIMA/ETS models  
+- Hyperparameter tuning for improved accuracy  
+- Incorporate additional external features (e.g., holidays, events)  
